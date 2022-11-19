@@ -1,0 +1,8 @@
+
+<div class="accommodate">
+  <app-img  [img]="product.image"></app-img>
+  <h2>{{ product.price }}</h2>
+  <p>{{product.title}} </p>  <!--| reverse}}</p>-->
+  <p appHighLight>{{ product.description}}</p>
+  <button (click)="onAddToCart()" > Add cart</button>
+</div>

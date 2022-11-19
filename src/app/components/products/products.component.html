@@ -1,0 +1,37 @@
+<div class="run">
+  <marquee behavior="alternate" direction="left">Tienda de practica para la clase de Programacion avanzada</marquee>
+</div>
+
+<p>
+  la cantidad {{myshoppingCart.length}}
+</p>
+<p>
+  
+</p>
+<p>
+  Today: {{today | date: 'short'}}
+</p>
+
+
+
+<!--
+  <p>
+  Tiempo Pasado: {{date | timeAgo}}
+</p>
+<p>
+  Otra fecha: {{date | date: 'short'}}
+</p>
+<p>
+  {{'hOLA BasCVAsas asASa' | lowercase}}
+</p>
+<p>
+  {{'estoy probando las vocales' | changeVocalToNumber}}
+</p>
+-->
+<div class="products--grid">
+  <app-product
+    [product]="product"
+    *ngFor="let product of products"
+    (addedProduct)="onAddToshoppingCart($event)"
+  ></app-product>
+</div>
